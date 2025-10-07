@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ملخص مبادئ الطيران (الأيروديناميكا)</title> 
+    
+    <style>
+    :root{
+              --bg:#0f172a;        /* slate-900 */
+                    --card:#111827cc;    /* gray-900 with alpha *
+            --text:#e5e7eb;      /* gray-200 */
+            --muted:#94a3b8;     /* slate-400 */
+                      --accent:#38bdf8;    /* sky-400 */  
+                            --ring:#22d3ee55;    /* cyan-400 with alpha */
+    }
+    *{box-sizing:border-box}
+        body {
+            margin:0; font-family: system-ui, -apple-system, Segoe UI, Roboto, "Noto Sans Arabic"
+            Arial, sans-serif;
+            font-family: 'Arial', sans-serif;
+            
+            background: radial-gradient(1200px 600px at 80% 0%, #0b1220 0%, var(--bg) 40%, #0b1220 100%);
+            color:var(--text)
+            
+            
+            line-height: 1.6;
+            min-height:100vh;
+            padding: 20px;
+            direction: rtl; /* لضمان الاتجاه من اليمين لليسار */
+            text-align: right;
+        }
+            header{
+      position:sticky; top:0; z-index:50;
+      backdrop-filter:saturate(1.2) blur(6px);
+      background: #0b1220cc;
+      border-bottom:1px solid #1f2937;
+    }
+     .container{max-width:1100px; margin:0 auto; padding:18px 16px}
+    .brand{display:flex; align-items:center; gap:10px}
+    .logo{
+      width:34px; height:34px; border-radius:10px; background:linear-gradient(135deg, var(--accent), #06b6d4);
+      box-shadow:0 6px 20px #22d3ee55 inset, 0 6px 20px #22d3ee55;
+    }
+    .brand h1{font-size:20px; margin:0}
+    nav a{color:var(--muted); text-decoration:none; margin-inline:8px}
+    nav a:hover{color:var(--text)}.hero{
+  text-align:center; padding:36px 16px 10px;
+}
+  .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background: #fff;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        
+        .brand h1{font-size:20px; margin:0}
+    nav a{color:var(--muted); text-decoration:none; margin-inline:8px}
+    nav a:hover{color:var(--text)}.hero{
+  text-align:center; padding:36px 16px 10px;
+}
+        h1 {
+            color: #007bff;
+            border-bottom: 3px solid #007bff;
+            padding-bottom: 10px;
+            margin-bottom: 25px;
+            text-align: center;
+        }
+        h2 {
+            color: #28a745;
+            margin-top: 25px;
+            border-bottom: 1px dashed #28a745;
+            padding-bottom: 5px;
+        }
+        ul {
+            list-style-type: square;
+            padding-right: 20px;
+        }
+        li strong {
+            color: #0056b3;
+        }
+        .formula {
+            background-color: #e9ecef;
+            padding: 10px;
+            border-radius: 5px;
+            text-align: center;
+            font-weight: bold;
+            margin: 15px 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>ملخص مُصغر لمبادئ الطيران (الأيروديناميكا)</h1>
+
+        <h2>1. مبدأ الاستمرارية (Conservation of Mass)</h2> 
+          <a href= pf2.png>بعض الصور </a>
+        <ul>
+            <li><strong>الفكرة الأساسية:</strong> كمية تدفق الكتلة (Mass Flow) للهواء تظل <strong>ثابتة</strong> عبر أي مقطع من مسار التدفق.</li>
+            <li><strong>المعادلة البسيطة (للكثافة الثابتة):</strong></li>
+            <div class="formula">A × V = Constant</div>
+            <li><strong>المعنى العملي:</strong> إذا ضاقت <strong>المساحة (A)</strong> (مثل جزء من الماسورة أو فوق الجناح)، يجب أن <strong>تزيد السرعة (V)</strong> لتعويض النقص والحفاظ على نفس كمية الهواء المارة.</li>
+        </ul>
+
+        <h2>2. مبدأ برنولي (Bernoulli's Principle)</h2>
+           <a href= pf2.png>بعض الصور </a>
+        <ul>
+            <li><strong>الفكرة الأساسية:</strong> مجموع الضغط الساكن والطاقة الحركية للهواء يظل <strong>ثابتًا</strong>.</li>
+            <li><strong>المعنى العملي:</strong> هناك علاقة <strong>عكسية</strong> بين سرعة الهواء وضغطه.
+                <ul>
+                    <li>عندما <strong>تزيد سرعة</strong> الهواء، <strong>يقل ضغطه</strong>.</li>
+                    <li>عندما <strong>تقل سرعة</strong> الهواء، <strong>يزيد ضغطه</strong>.</li>
+                </ul>
+            </li>
+        </ul>
+
+        <h2>3. تطبيق برنولي على جناح الطائرة (قوة الرفع)</h2>
+    <a href= https://share.google/Uz2EneWpY0UIKLeQG>بعض الصور </a>
+        <ul>
+            <li><strong>تصميم الجناح:</strong> مقطع الجناح (Airfoil) مصمم بحيث يجعل الهواء الذي يمر <strong>فوقه</strong> يقطع مسافة أطول ويسير <strong>أسرع</strong>.</li>
+            <li><strong>توليد الرفع:</strong>
+                <ol>
+                    <li><strong>سرعة عالية</strong> فوق الجناح ← <strong>ضغط منخفض</strong>.</li>
+                    <li><strong>سرعة أقل</strong> أسفل الجناح ← <strong>ضغط مرتفع</strong>.</li>
+                    <li>هذا <strong>الفرق في الضغط</strong> يولد <strong>قوة الرفع (Lift)</strong> التي ترفع الطائرة.</li> 
+                    <h2>      <a href= index4.html>الصفحه التاليه🔙</a>  </h2>
+                          </main>  <footer>
+    © جميع الحقوق محفوظة -ziad _ shahin  • هذا الموقع نموذجي ويعرض معلومات .
+  </footer>
+                </ol>
+            </li>
+        </ul>
+    </div>
+
+</body>
+</html>
+  
